@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Abhishek Mishra | Portfolio</title>
+    <style>
+        /* Reuse the CSS you provided earlier */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffffff, #f5f7fa);
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 2.4rem;
+            color: #4a90e2;
+            font-weight: 700;
+        }
+
+        nav a {
+            font-size: 1.6rem;
+            color: #555;
+            margin-left: 3rem;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #4a90e2;
+            border-bottom: 2px solid #4a90e2;
+        }
+
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            padding: 5rem 9%;
+        }
+
+        .home-img img {
+            width: 320px;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-content {
+            max-width: 600px;
+            margin-left: 3rem;
+            text-align: left;
+        }
+
+        .home-content h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .home-content span {
+            color: #4a90e2;
+        }
+
+        .home-content p {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 1.5rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #4a90e2;
+            padding: 1rem 2rem;
+            border-radius: 5rem;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+            transform: scale(1.1);
+        }
+
+        .social-icons {
+            margin-top: 2rem;
+        }
+
+        .social-icons a {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4a90e2;
+        }
+
+        @media (max-width: 768px) {
+            .home {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .home-img img {
+                margin-bottom: 2rem;
+            }
+
+            .home-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">Abhishek Mishra</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home">
+        <div class="home-img">
+            <img src="main2.jpg" alt="Abhishek Mishra">
+        </div>
+        <div class="home-content">
+            <h1>Hello, I'm <span>Abhishek Mishra</span></h1>
+            <p>
+                I'm a budding full-stack developer and final-year B.Voc student specializing in Software Development and E-Governance.
+                I build seamless digital experiences and enjoy solving coding challenges.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/abhishek-mishra-948706292" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Abhishek01-max-gif" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/_abhishekmishra._" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+</body>
+</html>
